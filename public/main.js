@@ -1,5 +1,7 @@
-// Init Skrollr
-
+// Init Skrollr and set defaults
+var s = skrollr.init({
+	box: '500p'
+});
 
 
 $(function () {

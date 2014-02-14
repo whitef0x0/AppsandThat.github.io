@@ -43,6 +43,38 @@ body {overflow:auto; height:7600px; }
 }
 
 
+/*The swiping effect CSS (for the second scroll 'view') 
+
+.main-container.push > section {
+    
+
+    background-size:cover;
+  }
+.main-container.push > section:nth-child(1){
+
+    opacity: 1;
+  }
+.main-container.push > section:nth-child(2){
+
+    position:absolute;    
+    opacity: 1;
+    overflow:hidden;
+  }
+.main-container.push > section:nth-child(3){
+
+    background:#f0f0f0;
+
+  }
+
+.slidepage {    
+    left:0;
+    width: 0%;
+    position: absolute;
+    height:500%;
+    background:#09f;
+
+}
+*/
 .skrollr-desktop #scrollbar {display:none;}
 
 body{
@@ -59,8 +91,10 @@ body{
     width: 100%;
     position: relative;
 }
-a {
-    text-decoration:none;
+p > a {
+    color: #385389!important;
+    text-decoration: underline;
+    /*text-decoration:none;*/
     -webkit-transition: all 0.4s ease-out;
       -moz-transition: all 0.4s ease-out;
       -ms-transition: all 0.4s ease-out;
@@ -347,12 +381,13 @@ width: 71%;
 
 /*Intro*/
 .about{
-    padding: 96px 0 ;
+    padding: 80px 0 ;
     background:rgb(255, 255, 255);
     
 }
 .intro{
-    padding: 96px 0 ;
+    padding: 80px 0 ;
+    position: relative !important;
     background:rgb(255, 255, 255);
     border-bottom: 1px solid #ddd;
     
@@ -599,8 +634,9 @@ and (max-width : 768px) {
     top: 75%;
     }
     .skill, .skill.right h2, .skill.right p{
-    width: 100%;
-    text-align:center;
+
+      width: 100%;
+      text-align:center;
     }
     
        .gallery .img {
