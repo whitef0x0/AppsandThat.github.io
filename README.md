@@ -29,3 +29,27 @@ Dependencies
 	Symbols/Icon Sets
 		Symbolset (symbolset.com)
 			
+clubsite
+========
+This is the official onepage website for the UBC "Apps and That" Club. 
+
+If you are member, please feel free to contribute.
+
+Dependencies
+
+	JS Libraries
+		BigSlide.JS
+		Skrollr
+		Jquery
+		Jquery Address
+		Venobox
+		ScrollIt.JS
+
+	CSS/JS Libraries
+		Semantic-UI
+		Animate.css (daneden.me/animate)
+	
+	Symbols/Icon Sets
+		Symbolset (symbolset.com)
+			
+
