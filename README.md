@@ -17,22 +17,52 @@ JS Libraries
     HeadroomJS
 
 CSS/JS Libraries
+
     Semantic-UI
     Animate.css (daneden.me/animate)
 
-Symbols/Icon Sets
+Symbols/Icon Set
+
     Symbolset (symbolset.com)
-Pushing it to Live Site
-We are currently use GitHub's hosting solution to host the club's website. If you want to push changes to the site (after all problems are ironed out), add a seperate remote branch to your git repo and push accordingly Command line instructions:
+    
+    
+    
+    
+Quick Start
+===========
 
-# git remote add ghpages https://github.com/AppsandThat/AppsandThat.github.io
-# git remote update
-# git add .
-# git commit -m "your message here"
-# git push remote ghpages
-If this does not work then try this command and check to see if you get the similar output (below the command)
+If you just want to get the repo and you are not (yet) a member:
+    #git clone https://github.com/AppsandThat/AppsandThat.github.io
+    
+If you want te be able to push and pull (i.e. send your changes for approval and receive the newest code) then
 
-#git remote -v
-OUTPUT: ghpages https://github.com/AppsandThat/AppsandThat.github.io (fetch) ghpages https://github.com/ApssandThat/AppsandThat.github.io (push) .... ....
+    # git init
+    # git remote add origin https://github.com/AppsandThat/clubsite
+    # git pull origin
+    (enter you username + password here)
+   
+    TO PUSH
+    #git add .
+    #git commit -m "your message here"
+    #git push origin master
 
-If you do not get these two lines, most likely you have forgoten to run 'git remote update' or it may have failed. If you experience further problems, don't hesitate to look online, or you can post to the FB group (if you're really stuck then you can shoot me an email(david.chris.baldiwn[at]gmail[dot]com or FB message )
+
+Adding and Pushing to appsandthat.github.io
+====
+    We are currently use GitHub's hosting solution to host the club's website. If you want to push changes to the       site (after all problems are ironed out), add a seperate remote branch to your git repo and push accordingly        Command line instructions:
+    
+        # git remote add ghpages https://github.com/AppsandThat/AppsandThat.github.io
+        # git remote update
+        # git add .
+        # git commit -m "your message here"
+        # git push remote ghpages
+    If this does not work then try this command and check to see if you get the similar output (below the command)
+    
+        #git remote -v
+    OUTPUT: 
+        ghpages https://github.com/AppsandThat/AppsandThat.github.io (fetch) 
+        ghpages https://github.com/AppsandThat/AppsandThat.github.io (push) 
+        origin  https://github.com/AppsandThat/clubsite (fetch)
+        origin  https://github.com/AppsandThat/clubsite (push)
+    
+    If you do not get these two lines, most likely you have forgoten to run 'git remote update' or it may have failed. If you experience further problems, don't hesitate to look online, or you can post to the FB group (if you're really stuck then you can shoot me (David Baldwinn) or James Deng a FB message.
