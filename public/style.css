@@ -43,38 +43,7 @@ body {overflow:auto; height:7600px; }
 }
 
 
-/*The swiping effect CSS (for the second scroll 'view') 
 
-.main-container.push > section {
-    
-
-    background-size:cover;
-  }
-.main-container.push > section:nth-child(1){
-
-    opacity: 1;
-  }
-.main-container.push > section:nth-child(2){
-
-    position:absolute;    
-    opacity: 1;
-    overflow:hidden;
-  }
-.main-container.push > section:nth-child(3){
-
-    background:#f0f0f0;
-
-  }
-
-.slidepage {    
-    left:0;
-    width: 0%;
-    position: absolute;
-    height:500%;
-    background:#09f;
-
-}
-*/
 .skrollr-desktop #scrollbar {display:none;}
 
 body{
@@ -82,8 +51,8 @@ body{
     margin:0px;
     padding: 0px;
     color:#555;
-    background:rgba(41, 128, 185,1.0);
-
+    background:rgba(212, 189, 176, 1);
+    overflow-x:hidden;
 }
 .main-container {
     float: left;
