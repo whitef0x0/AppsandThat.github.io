@@ -16,7 +16,7 @@ Dependencies
 		Skrollr
 		Jquery
 		Jquery Address
-		Venobox
+		Smoothscroll.JS
 		ScrollIt.JS
 		HeadroomJS
 
@@ -27,34 +27,6 @@ Dependencies
 	Symbols/Icon Sets
 		Symbolset (symbolset.com)
 			
-
-Pushing it to Live Site
-=======================
-
-We are currently use GitHub's hosting solution to host the club's website. If you want to push changes to the site (after all problems are ironed out), add a seperate remote branch to your git repo and push accordingly
-Command line instructions:
-
-JS Libraries
-    BigSlide.JS
-    Skrollr
-    Jquery
-    Jquery Address
-    Venobox
-    ScrollIt.JS
-    HeadroomJS
-
-CSS/JS Libraries
-
-    Semantic-UI
-    Animate.css (daneden.me/animate)
-
-Symbols/Icon Set
-
-    Symbolset (symbolset.com)
-    
-    
-    
-    
 Quick Start
 ===========
 
@@ -75,7 +47,7 @@ If you want te be able to push and pull (i.e. send your changes for approval and
 
 
 Adding and Pushing to appsandthat.github.io
-====
+============================================
     We are currently use GitHub's hosting solution to host the club's website. If you want to push changes to the       site (after all problems are ironed out), add a seperate remote branch to your git repo and push accordingly        Command line instructions:
     
         # git remote add ghpages https://github.com/AppsandThat/AppsandThat.github.io
