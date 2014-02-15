@@ -7,7 +7,7 @@ If you are member, please feel free to contribute. As of yet we are not using an
 Main Files
 ==
 	main.js - Javascript file that contains ScrollIt, Skroller and Headroom initializations.
-	styles.css - the main CSS3 file for the site. This one has the highest priority and 						     will overwrite any styles set forth in any other CSS files (except for the ones set by Skroller)
+	styles.css - the main CSS3 file for the site. This one has the highest priority and will overwrite any styles set forth in any other CSS files (except for the ones set by Skroller)
 
 
 Dependencies
