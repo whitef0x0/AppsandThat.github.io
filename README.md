@@ -47,7 +47,7 @@ If you want te be able to push and pull (i.e. send your changes for approval and
     #git push origin master
 
 
-Adding and Pushing to appsandthat.github.io
+Adding and Pushing to apps.polydaic.com
 ============================================
     We are currently use GitHub's hosting solution to host the club's website. If you want to push changes to the       site (after all problems are ironed out), add a seperate remote branch to your git repo and push accordingly        Command line instructions:
     
