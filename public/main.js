@@ -1,6 +1,10 @@
 // Init Skrollr and set defaults
 var s = skrollr.init({
 	box: '500p'
+    mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+    }
 });
 
 
