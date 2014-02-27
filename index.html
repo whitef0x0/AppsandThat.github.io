@@ -37,6 +37,7 @@
     <link rel="icon" href="http://appthat.polydaic.com/favicon.ico" type="image/x-icon">
     <link rel="author" href="https://plus.google.com/u/0/113037702813220846109">
     <link rel="stylesheet" type="text/css" href="./public/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./public/basic.icon.min.css">
     <script src="./public/jquery.js"></script>
     <script src="./public/scrollIt.js"></script>
     <script src="./public/jquery.address.js"></script>
@@ -91,39 +92,48 @@
     </nav>
 
 
-    <!-- Skrollr divs  stuff -->
+    <!-- Skrollr scrollbar and progress bar -->
 
     <div id="progress" class="desktop" data-0="width:0%;" data-end="width:100%;"></div>
 
-    <div id="scrollbar"  data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;" class="skrollable skrollable-between" ></div>
-
+    <!--
+        <div id="scrollbar"  data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;" class="skrollable skrollable-between" ></div>
+    -->
     <header id="header" class="animate push slideDown" style="-webkit-transition: right 300ms ease; transition: right 300ms ease;">
         <div class="wrapper">
-            <div class="ui two column grid">
-                <div class="column">
+            <div class="ui  grid">
+                <div class="six wide column">
                     <div class="logo"><a data-scroll-nav="0">APPS 'n THAT</a> </br> <small> a UBC App Dev Club</small>
                     </div>
                 </div>
-                <div class="column">
+                <div class="ten wide column">
                     <nav>
                         <div class="desktop">
 
-                            <a data-scroll-nav="1" class="item"> About</a>
-                            <a data-scroll-nav="2" class="item"> Team</a>
-                            <a data-scroll-nav="3" class="item"> Events</a>
-                            <a data-scroll-nav="4" class="item"> Contact</a>
+                            <a href="#about" class="item"> About</a>
+                            <a href="#team" class="item"> Team</a>
+                            <a href="#events" class="item"> Events</a>
+                            <a href="#contact" class="item"> Contact</a>
                         </div>
+                        <div class="mobile">
 
-                        <a href="http://appthat.polydaic.com/#menu" class="mobile menu-link"><i class="reorder icon"></i></a>
+                            <a href="#about" class="icn"> <i class="info icon"> </i> </a>
+                            <a href="#team" class="icn"> <i class="users icon"></i> </a>
+                            <a href="#events" class="icn">  <i class="calendar icon"></i></a>
+                            <a href="#contact" class="icn">  <i class="chat icon"></i></a>
+                        </div>
+                        <!--
+                        <a href="#menu" class="mobile menu-link"><i class="reorder icon"></i></a>
+                        -->
                     </nav>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="main-container push" style="-webkit-transition: right 300ms ease; transition: right 300ms ease;" data-start="background:rgb(205, 178, 164);" data-400="background:rgb(255,255,255)">
+    <div class="main-container " style="" >
 
-        <section class="billboard" >
+        <section class="billboard push" >
             <div class="wrapper" >
                 <h2 class="complete">Wanna learn App Development? <br>
                   <small>Scroll down for more!</small>
@@ -131,26 +141,24 @@
             </div>
         </section>
 
-        <section class="intro"  data-start="transform:scale(1);opacity:1; background:rgb(205, 178, 164);" data-300
-        ="transform:scale(1.26);opacity:1;"data-520="background:rgb(255,255,255);"  >
+        <section class="intro" id data-30-bottom-top="transform:scale(1); background:rgb(205, 178, 164);" data-100-bottom="transform:scale(1.16);background:rgb(255,255,255);"  >
             <div class="wrapper" >
 
                 <h1 class="" prop="description" > 'Apps and That' is a UBC club where <strong> you </strong> get to create the Apps. You can be sure to create <em> at least one </em>app every semester </h1> 
 
             </div>
-        </section>
-        
-        
+        </section>      
 
-        <section class="about" id = "about"></br>
+        <section class="about" id = "about">
         </br>
         </br>
-                </br>
+        </br>
+        </br>
         </br>
         </br>
             <h3 class="tritary">About </h3>
             <div class="wrapper">
-                <div class="img small mobile">
+                <div class="img mobile centered" >
                     <img src="./public/app.jpg">
                 </div>
                 <div class="skill left">
@@ -158,12 +166,12 @@
                     <p > <strong>We (and you) build apps. </strong></br></br>We also hold weekly meetings during the school year and bimonthly talks, featuring rockstar speakers and devs! 
                     </p>
                 </div>
-                <div class="img medium desktop">
+                <div class="img medium desktop ">
                     <img src="./public/app.jpg">
                 </div>
             </div>
             <div class="wrapper">
-                <div class="img mobile">
+                <div class="img small mobile">
                     <img src="./public/when.png">
                 </div>
                 <div class="skill right">
@@ -181,7 +189,7 @@
                 </div>
                 <div class="skill left">
                     <h2>HOW DO I JOIN?</h2>
-                    <p >The easiest way to join is to request a membership to <a href="https://www.facebook.com/groups/app.that"> <u>the Facebook Group </u></a> If you don't have facebook, then send an email to david.chris.baldwin[at]gmail[dot]com with your student number and name.
+                    <p >The easiest way to join is through <a href="https://www.facebook.com/groups/app.that"> <u>the Facebook Group.</u></a> </br>If you don't have facebook, shoot me an email (<small>david.chris.baldwin[at]gmail[dot]com</small>) with your student number and name.
                     </p>
                 </div>
 
@@ -202,31 +210,32 @@
                     <div class="img mobile right " style="">
                         <img class="circular ui image" src="./public/davidb.jpg">
                     </div>
-
+                    
+                    <div class ="img desktop right">
+                        <img class="circular ui image  " data-top-bottom="opacity:0" data-top="opacity:1" src="./public/davidb.jpg">
+                    </div>
                     
 
-                    <div  class=" skill left" data-bottom-top="right:100%; opacity:0" data-center-center="right:5%; opacity:1"style="position: relative!important;">
-                        <h2>President: David Baldwin </h2> </br>
+                    <div  class=" skill right" data-start="left:115%; opacity:0" data-100-top="left:0%; opacity:1" style="position: relative!important;">
+                        <h2>President: David Baldwin </h2>
                         <p >David Baldwin is a true futurist - he believes that technology should be used to improves the lives of others. He was motivated to start this club due to a perceived lack of community support of application developers in UBC. </br><small>Visit his company <a href="http://polydaic.com"> site here </a></small>
                         </p>
                     </div>
-                    <div class ="img large right">
-                        <img class="circular ui image  " data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/davidb.jpg">
-                    </div>
+                  
 
                 </div>
                 <div class="wrapper">
 
-                    <div class="img mobile right" style="">
+                    <div class="img mobile left" style="">
                         <img class="circular ui image" src="./public/jon_profpic.jpg">
                     </div>
 
-                    <div class ="img right">
+                    <div class ="img desktop left">
                         <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/jon_profpic.jpg">
                     </div>
 
-                    <div  class="skrollable skill right" data-bottom-top="left:100%; opacity:0" data-center-center="left:5%; opacity:1"style="position: relative!important;">
-                        <h2>Vice President - Jon Mercer </h2></br>
+                    <div  class=" skill left" data-start="right:115%; opacity:0" data-100-top="right:0%; opacity:1"style="position: relative!important;">
+                        <h2>Vice President: Jon Mercer </h2>
                         <p > Jon is a CS student in University of British Columbia.  In his spare time, he like to shoot films, write blogs about  university life in general and plays volleyball. As Vice President Jon Mercer serves as official liason to the President and acts as second-in-command. </br><small>Visit his <a href="http://jonathanmercer.com"> site here </a></small>
                         </p>
                     </div>
@@ -235,21 +244,23 @@
                 </div>
                 <div class="wrapper">
 
-                    <div class="img mobile left" style="">
-                        <img class="circular ui image" src="./public/davidb.jpg">
+                    <div class="img mobile right" style="">
+                        <img class="circular ui image" src="./public/jamesd.jpg">
                     </div>
 
-                    
-                     <div  class=" skill left" data-bottom-top="right:100%; opacity:0" data-center-center="right:5%; opacity:1"style="position: relative!important;">
-                        <h2>Treasurer James Deng </h2></br>
-                        <p > James Deng is our treasurer and CFO for our club. As President of the Computer Science Student Society (<a href="thecube.ca">thecube.ca</a>) he has worked to improve the profile of UBC CS and introduce sponsorships and new events. James brings to the board technical and management experience along  with his many contacts throught UBC and in the Vancouver tech community.
-                        </p>
-                    </div>
-                    <div class ="img left">
+                    <div class ="img desktop right">
                         <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/jamesd.jpg">
                     </div>
 
+                    
+                     <div  class=" skill right" data-start="left:115%; opacity:0" data-100-top="left:0%; opacity:1" style="position: relative!important;">
+                        <h2>Treasurer: James Deng </h2>
+                        <p > James Deng is our treasurer and CFO for our club. As President of the Computer Science Student Society (<a href="thecube.ca">thecube.ca</a>) he has worked to improve the profile of UBC CS and introduce sponsorships and new events. James brings to the board technical and management experience along  with his many contacts throught UBC and in the Vancouver tech community.
+                        </p>
+                    </div>
+             
                 </div>
+                <!--
                 <div class="wrapper">
 
                     <div class="img mobile right" style="">
@@ -268,12 +279,13 @@
                     
 
                 </div>
+                -->
 
                 
             </div>
         </section>
 
-        <section id="event" class="gallery ">
+        <section id="events" class="gallery">
             <h3 class="secondary">Events </h3>
 
             <div class="wrapper">
@@ -295,7 +307,7 @@
             </div>
         </section>
 
-        <section class="intro gallery">
+        <section class="intro gallery" id = "contact"> 
             <div class="wrapper">
             </div>
         </section>
