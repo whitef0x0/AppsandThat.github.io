@@ -716,7 +716,9 @@ and (max-width : 768px) {
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
-    
+    header .desktop {
+      display:none;
+    }
     #header {
      padding: 5px 0;
      width: 100%;
