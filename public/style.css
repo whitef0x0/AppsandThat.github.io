@@ -186,7 +186,7 @@ h3.tritary{
      width: 100%;
      z-index:998;
   }
-    .mobile.menu-link{
+    .resp.menu-link{
       display:none;
     }
     .animate{
@@ -204,9 +204,10 @@ h3.tritary{
        background:rgba(105, 91, 78,.9);
         
     }
-    #header. a.mobile{
+    #header. a.resp{
        display:block;
     }
+
 
     #header .desktop{
        display:block;
@@ -231,6 +232,10 @@ h3.tritary{
            padding-top: 5px;
 
        }
+       header nav. .desktop.inline {
+          float: right;
+
+       }
        header nav {
            margin-top: 0px;
 
@@ -250,7 +255,7 @@ h3.tritary{
                transition: all 0.4s ease-out;
             
            }
-            .mobile a.icn {
+            .resp a.icn {
               text-decoration:none;
               padding-left: 1.5%;
               padding-right: 0%;
@@ -395,7 +400,7 @@ width: 71%;
 }
 
 /*About*/
-.wrapper .img.mobile{
+.wrapper .img.resp{
      display:none;
 }
 .wrapper .img{
@@ -669,12 +674,12 @@ and (max-width : 768px) {
     .intro .wrapper .img{
         display: none;
     }
-      .wrapper .img.mobile{
+      .wrapper .img.resp{
           display: block;
           width: 100%;
           margin-top: 0%;
       }
-        .wrapper .img.mobile img {
+        .wrapper .img.resp img {
           display: block;
           margin-right: auto;
           margin-left: auto;
@@ -716,9 +721,7 @@ and (max-width : 768px) {
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
-    header .desktop {
-      display:none;
-    }
+
     #header {
      padding: 5px 0;
      width: 100%;
@@ -730,6 +733,9 @@ and (max-width : 1024px) {
       header .logo small {
         display:none;
       }
+      header .resp {
+      display:none;
+    }
     .desktop{
         display:none;
     }
@@ -763,6 +769,7 @@ and (max-width : 1024px) {
 @media only screen
 and (min-width : 1024px)
 and (max-width : 1224px) {
+
     .wrapper {
         zoom: 1;
         width: 100%;
@@ -778,7 +785,7 @@ and (max-width : 1224px) {
         color: rgba(255, 255, 255, 0.9);
     }
  
-  .slideup .mobile{
+  .slideup .resp{
       display:none;
   }
   .slideup .desktop{
@@ -795,10 +802,10 @@ and (min-width : 1224px) {
   #header.slideDown .desktop{
       display:block;
   }
-  #header.slideUp .mobile{
+  #header.slideUp .resp{
       display:none;
   }
-  #header.slideDown .mobile{
+  #header.slideDown .resp{
       display:none;
   }
 }

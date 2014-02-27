@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html xmlns:fb="http://www.facebook.com/2008/fbml">
 <!-- saved from url=(0018)http://appthat.polydaic.com/ -->
 <html class=" skrollr skrollr-desktop wf-freightsanspro-i4-active wf-freightsanspro-i7-active wf-freightsanspro-n4-active wf-freightsanspro-n7-active wf-freighttextpro-i4-active wf-freighttextpro-i7-active wf-freighttextpro-n4-active wf-freighttextpro-n7-active wf-museosansrounded-n1-active wf-museosansrounded-n3-active wf-museosansrounded-n5-active wf-museosansrounded-n7-active wf-active ">
 
@@ -28,9 +28,6 @@
     <title>Apps 'n That Club| Learn App Development @UBC!</title>
 
     <link rel="stylesheet" type="text/css" href="./public/semantic.css">
-
-    <link rel="stylesheet" type="text/css" href="./public/ss-social.css">
-    <link rel="stylesheet" type="text/css" href="./public/ss-pika.css">
     <link rel="stylesheet" type="text/css" href="./public/animate.css">
     <link rel="stylesheet" type="text/css" href="./public/fixedpositioning.css">
     <link rel="shortcut icon" href="http://appthat.polydaic.com/favicon.ico" type="image/x-icon">
@@ -59,7 +56,7 @@
             font-family: "freight-text-pro", sans-serif;
         }
     </style>
-    <link rel="stylesheet" href="http://use.typekit.net/c/286a7c/freight-sans-pro:i4:i7:n4:n7,freight-text-pro:i4:i7:n4:n7,museo-sans-rounded:n1:n3:n5:n7.TJC:N:2,TJK:N:2,TJB:N:2,TJJ:N:2,WHZ:N:2,WHc:N:2,WHY:N:2,WHb:N:2,R0R:N:2,R0P:N:2,R0S:N:2,R0Q:N:2/d?3bb2a6e53c9684ffdc9a9bfe1d5b2a622b4c22dc410c939a8701751a4802e083d29e9345b41f774335bacdd319b81989ec247e15f806f96dfbc59b20504b6f9c99742ec55862b462985929f0acce054217a6ecd479af23c13c4c2a04f07bd62a5947e156b274ac0085912cf2b7fdc0e2825faf7abdc55c93a96ce62fa8a8eeda16203fbe783ab2359b888da8ab74f4764f6f96b4abe37f69e1c6a0f040f94c3663ece903f4be0ff1a83816c046c5ae02cb10ba5fe474002df03187">
+    
 
     <script type="text/javascript">
         try {
@@ -69,11 +66,25 @@
 
 
     <link rel="stylesheet" type="text/css" href="./public/style.css">
-
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
 </head>
 
 <body itemscope="Person" cz-shortcut-listen="true" ">
-    <!-- <div id="skrollr-body" style="visibility:hidden"> -->
+
+    <!-- Facebook Graph API -->
+    <div id="fb-root"></div>
+    <script>
+     
+        FB.init({
+          appId      : '1512654342164768',
+          status     : true,
+          xfbml      : true
+        });
+      
+    </script>
+
+
+    <!-- <div id="skrollr-body" style="visibility:hidden">
     <nav id="menu" class="panel sidebar" role="navigation" style=" top: 0px; bottom: 0px; width: 15.625em; height: 100%; -webkit-transition: right 300ms ease; transition: right 300ms ease;">
         <a href="#menu" class="menu-link"><i class="close icon"></i></a>
         <a href="#about" class="local"> About</a>
@@ -89,7 +100,7 @@
         <div class="bottom">
 
         </div>
-    </nav>
+    </nav> -->
 
 
     <!-- Skrollr scrollbar and progress bar -->
@@ -101,32 +112,29 @@
     -->
     <header id="header" class="animate push slideDown" style="-webkit-transition: right 300ms ease; transition: right 300ms ease;">
         <div class="wrapper">
-            <div class="ui  grid">
-                <div class="six wide column">
+            <div class="ui secondary pointing menu">
+                <div class="ui item">
                     <div class="logo"><a data-scroll-nav="0">APPS 'n THAT</a> </br> <small> a UBC App Dev Club</small>
                     </div>
                 </div>
-                <div class="ten wide column">
-                    <nav>
-                        <div class="desktop">
 
-                            <a href="#about" class="item"> About</a>
-                            <a href="#team" class="item"> Team</a>
-                            <a href="#events" class="item"> Events</a>
-                            <a href="#contact" class="item"> Contact</a>
-                        </div>
-                        <div class="mobile">
 
-                            <a href="#about" class="icn"> <i class="info icon"> </i> </a>
-                            <a href="#team" class="icn"> <i class="users icon"></i> </a>
-                            <a href="#events" class="icn">  <i class="calendar icon"></i></a>
-                            <a href="#contact" class="icn">  <i class="chat icon"></i></a>
-                        </div>
-                        <!--
-                        <a href="#menu" class="mobile menu-link"><i class="reorder icon"></i></a>
-                        -->
-                    </nav>
+                <div class="right menu">
+          
+                    <a href="#about" class="ui item "> <div class ="desktop inline">About</div> <i class="resp info icon"> </i></a>
+
+                    <a href="#team" class="item"> <div class ="desktop inline">Team</div> <i class="resp users icon"> </i></a>
+
+                    <a href="#events" class="item"> <div class ="desktop inline">Events</div> <i class="resp calendar icon"> </i></a>
+
+                    <a href="#contact" class="item"> <div class ="desktop inline">Contact</div> <i class="resp chat icon"> </i></a>
+                    
                 </div>
+                
+                <!--
+                <a href="#menu" class="resp menu-link"><i class="reorder icon"></i></a>
+                -->
+ 
             </div>
         </div>
     </header>
@@ -158,7 +166,7 @@
         </br>
             <h3 class="tritary">About </h3>
             <div class="wrapper">
-                <div class="img mobile centered" >
+                <div class="img resp centered" >
                     <img src="./public/app.jpg">
                 </div>
                 <div class="skill left">
@@ -171,7 +179,7 @@
                 </div>
             </div>
             <div class="wrapper">
-                <div class="img small mobile">
+                <div class="img small resp">
                     <img src="./public/when.png">
                 </div>
                 <div class="skill right">
@@ -184,7 +192,7 @@
                 </div>
             </div>
             <div class="wrapper">
-                <div class="img mobile">
+                <div class="img resp">
                     <img src="./public/services-gd.png">
                 </div>
                 <div class="skill left">
@@ -207,7 +215,7 @@
             <div class="ui page">
                 <div class="wrapper">
 
-                    <div class="img mobile right " style="">
+                    <div class="img resp right " style="">
                         <img class="circular ui image" src="./public/davidb.jpg">
                     </div>
                     
@@ -226,7 +234,7 @@
                 </div>
                 <div class="wrapper">
 
-                    <div class="img mobile left" style="">
+                    <div class="img resp left" style="">
                         <img class="circular ui image" src="./public/jon_profpic.jpg">
                     </div>
 
@@ -244,7 +252,7 @@
                 </div>
                 <div class="wrapper">
 
-                    <div class="img mobile right" style="">
+                    <div class="img resp right" style="">
                         <img class="circular ui image" src="./public/jamesd.jpg">
                     </div>
 
@@ -263,7 +271,7 @@
                 <!--
                 <div class="wrapper">
 
-                    <div class="img mobile right" style="">
+                    <div class="img resp right" style="">
                         <img class="circular ui image right" src="./public/adamv.jpg">
                     </div>
 
@@ -343,10 +351,11 @@
 
     <script type="text/javascript" src="./public/bigslide.js"></script>
 
-    <script type="text/javascript" src="./public/venobox.js"></script>
+    <script type="text/javascript" src="./public/skrollr.min.js"></script>  
 
-    <script type="text/javascript" src="./public/skrollr.min.js"></script>   
     <script src="./public/main.js"></script>
+
+    <script src="./public/fb_graph.js"></script>
 </body>
 
 </html>
