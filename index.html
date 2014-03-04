@@ -25,25 +25,26 @@
 
 
     <!-- Site Properities -->
-    <title>Apps 'n That Club| Learn App Development @UBC!</title>
+    <title>App 'n That Club| Learn App Development @UBC!</title>
 
-    <link rel="stylesheet" type="text/css" href="./public/semantic.css">
-    <link rel="stylesheet" type="text/css" href="./public/animate.css">
-    <link rel="stylesheet" type="text/css" href="./public/fixedpositioning.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/fixedpositioning.css">
+
     <link rel="shortcut icon" href="http://appthat.polydaic.com/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="http://appthat.polydaic.com/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://app.polydaic.com/favicon.ico" type="image/x-icon">
     <link rel="author" href="https://plus.google.com/u/0/113037702813220846109">
-    <link rel="stylesheet" type="text/css" href="./public/semantic.css">
-    <link rel="stylesheet" type="text/css" href="./public/basic.icon.min.css">
-    <script src="./public/jquery.js"></script>
-    <script src="./public/scrollIt.js"></script>
-    <script src="./public/jquery.address.js"></script>
-    <script src="./public/semantic.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/basic.icon.min.css">
+    <script src="./public/js/jquery.js"></script>
+    <script src="./public/js/scrollIt.js"></script>
+    <script src="./public/js/jquery.address.js"></script>
+    <script src="./public/js/semantic.js"></script>
 
  
 
     <!--Custom-->
-    <script src="./public/feed.js"></script>
+    <script src="./public/js/feed.js"></script>
     <script type="text/javascript" src="./public/wvg1mgw.js"></script>
     <style type="text/css">
         .tk-museo-sans-rounded {
@@ -65,26 +66,41 @@
     </script>
 
 
-    <link rel="stylesheet" type="text/css" href="./public/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
     <script src="http://connect.facebook.net/en_US/all.js"></script>
 </head>
 
 <body itemscope="Person" cz-shortcut-listen="true" ">
 
     <!-- Facebook Graph API -->
-    <div id="fb-root"></div>
-    <script>
-     
-        FB.init({
-          appId      : '1512654342164768',
-          status     : true,
-          xfbml      : true
-        });
-      
-    </script>
+        <div id="fb-root"></div>
+        <script>
+         
+            window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '1512654342164768', // App ID
+                  channelUrl : '//apps.polydaic.com', // Channel File
+                  status     : true, // check login status
+                  cookie     : true, // enable cookies to allow the server to access the session
+                  xfbml      : true  // parse XFBML
+                });
+
+                // Additional initialization code here
+            }s
+
+              // Load the SDK Asynchronously
+              (function(d){
+                 var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement('script'); js.id = id; js.async = true;
+                 js.src = "//connect.facebook.net/en_US/all.js";
+                 ref.parentNode.insertBefore(js, ref);
+               }(document));
+          
+        </script>
 
 
-    <!-- <div id="skrollr-body" style="visibility:hidden">
+    <!-- <div id="skrollr-body" style="visibility:hidden">display: inline-block;
     <nav id="menu" class="panel sidebar" role="navigation" style=" top: 0px; bottom: 0px; width: 15.625em; height: 100%; -webkit-transition: right 300ms ease; transition: right 300ms ease;">
         <a href="#menu" class="menu-link"><i class="close icon"></i></a>
         <a href="#about" class="local"> About</a>
@@ -107,16 +123,15 @@
 
     <div id="progress" class="desktop" data-0="width:0%;" data-end="width:100%;"></div>
 
-    <!--
-        <div id="scrollbar"  data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;" class="skrollable skrollable-between" ></div>
-    -->
+
     <header id="header" class="animate push slideDown" style="-webkit-transition: right 300ms ease; transition: right 300ms ease;">
         <div class="wrapper">
             <div class="ui secondary pointing menu">
-                <div class="ui item">
-                    <div class="logo"><a data-scroll-nav="0">APPS 'n THAT</a> </br> <small> a UBC App Dev Club</small>
-                    </div>
+
+                <div class="logo ui item">
+                    <a href="/"><img class="desktop" src="public/img/clublogo.png"><img class="resp" src="public/img/clublogo_m.png"></a>
                 </div>
+  
 
 
                 <div class="right menu">
@@ -151,23 +166,16 @@
 
         <section class="intro" id data-30-bottom-top="transform:scale(1); background:rgb(205, 178, 164);" data-100-bottom="transform:scale(1.16);background:rgb(255,255,255);"  >
             <div class="wrapper" >
-
                 <h1 class="" prop="description" > 'Apps and That' is a UBC club where <strong> you </strong> get to create the Apps. You can be sure to create <em> at least one </em>app every semester </h1> 
 
             </div>
         </section>      
 
         <section class="about" id = "about">
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
             <h3 class="tritary">About </h3>
             <div class="wrapper">
                 <div class="img resp centered" >
-                    <img src="./public/app.jpg">
+                    <img src="./public/img/app.jpg">
                 </div>
                 <div class="skill left">
                     <h2>WHAT DO WE DO?</h2>
@@ -175,12 +183,12 @@
                     </p>
                 </div>
                 <div class="img medium desktop ">
-                    <img src="./public/app.jpg">
+                    <img src="./public/img/app.jpg">
                 </div>
             </div>
             <div class="wrapper">
                 <div class="img small resp">
-                    <img src="./public/when.png">
+                    <img src="./public/img/when.png">
                 </div>
                 <div class="skill right">
                     <h2>WHEN+WHERE DO WE MEET?</h2>
@@ -188,12 +196,12 @@
                     </p>
                 </div>
                 <div class="img desktop right">
-                    <img src="./public/when.png">
+                    <img src="./public/img/when.png">
                 </div>
             </div>
             <div class="wrapper">
                 <div class="img resp">
-                    <img src="./public/services-gd.png">
+                    <img src="./public/img/services-gd.png">
                 </div>
                 <div class="skill left">
                     <h2>HOW DO I JOIN?</h2>
@@ -202,7 +210,7 @@
                 </div>
 
                 <div class="img desktop">
-                    <img src="./public/services-gd.png">
+                    <img src="./public/img/services-gd.png">
                 </div>
                 <div class="wrapper">
 
@@ -216,11 +224,11 @@
                 <div class="wrapper">
 
                     <div class="img resp right " style="">
-                        <img class="circular ui image" src="./public/davidb.jpg">
+                        <img class="circular ui image" src="./public/img/davidb.jpg">
                     </div>
                     
                     <div class ="img desktop right">
-                        <img class="circular ui image  " data-top-bottom="opacity:0" data-top="opacity:1" src="./public/davidb.jpg">
+                        <img class="circular ui image  " data-top-bottom="opacity:0" data-top="opacity:1" src="./public/img/davidb.jpg">
                     </div>
                     
 
@@ -235,11 +243,11 @@
                 <div class="wrapper">
 
                     <div class="img resp left" style="">
-                        <img class="circular ui image" src="./public/jon_profpic.jpg">
+                        <img class="circular ui image" src="./public/img/jon_profpic.jpg">
                     </div>
 
                     <div class ="img desktop left">
-                        <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/jon_profpic.jpg">
+                        <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/img/jon_profpic.jpg">
                     </div>
 
                     <div  class=" skill left" data-start="right:115%; opacity:0" data-100-top="right:0%; opacity:1"style="position: relative!important;">
@@ -253,11 +261,11 @@
                 <div class="wrapper">
 
                     <div class="img resp right" style="">
-                        <img class="circular ui image" src="./public/jamesd.jpg">
+                        <img class="circular ui image" src="./public/img/jamesd.jpg">
                     </div>
 
                     <div class ="img desktop right">
-                        <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/jamesd.jpg">
+                        <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/img/jamesd.jpg">
                     </div>
 
                     
@@ -272,11 +280,11 @@
                 <div class="wrapper">
 
                     <div class="img resp right" style="">
-                        <img class="circular ui image right" src="./public/adamv.jpg">
+                        <img class="circular ui image right" src="./public/img/adamv.jpg">
                     </div>
 
                     <div class ="img right">
-                        <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/adamv.jpg">
+                        <img class="circular ui image" data-bottom-top="opacity:0" data-center-center="opacity:1" src="./public/img/adamv.jpg">
                     </div>
 
                     <div  class="skrollable skill right" data-bottom-top="left:100%; opacity:0" data-center-center="left:5%; opacity:1"style="position: relative!important; padding-bottom: 215px">
@@ -341,21 +349,20 @@
 
             <p class="copyright">© 2014 Apps and That / Designed by<a href="http://www.polydaic.com"> Polydaic Web</a></p>
         </section>
-
     </div>
 
     
 
-    <img itemprop="image" src="./public/appsthat-social.png" style="display:none;">
-    <script type="text/javascript" src="./public/Headroom.js"></script>
+    <img itemprop="image" src="./public/img/appsthat-social.png" style="display:none;">
+    <script type="text/javascript" src="./public/js/Headroom.js"></script>
 
-    <script type="text/javascript" src="./public/bigslide.js"></script>
+    <script type="text/javascript" src="./public/js/bigslide.js"></script>
 
-    <script type="text/javascript" src="./public/skrollr.min.js"></script>  
+    <script type="text/javascript" src="./public/js/skrollr.min.js"></script>  
 
-    <script src="./public/main.js"></script>
+    <script src="./public/js/main.js"></script>
 
-    <script src="./public/fb_graph.js"></script>
+    <script src="./public/js/fb_graph.js"></script>
 </body>
 
 </html>
